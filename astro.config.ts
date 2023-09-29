@@ -15,15 +15,14 @@ export default defineConfig({
         region: "us",
       },
       components: {
-        page: "storyblok/Page",
-        text: "storyblok/Text",
-        image: "storyblok/Image",
-        description: "storyblok/Description",
+        page: "services/storyblok/Page",
+        text: "services/storyblok/Text",
+        image: "services/storyblok/Image",
+        description: "services/storyblok/Description",
       },
     }),
     UnoCSS({
       injectReset: true,
-      preflight: true,
     }),
   ],
 });

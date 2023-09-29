@@ -2,7 +2,7 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 p-4 w-full h-auto">
+<header class="sticky top-0 p-4 w-full h-auto bg-gradient-to-r from-gray-900 via-[#18181b] to-gray-900 z-10">
  <nav class="flex text-white justify-start gap-4 items-center">
   <a class={currentPath === "/" ? "text-yellow-600" : ""} href="/">Home</a>
   <a class={currentPath === "/projects" ? "text-yellow-600" : ""} href="/projects">Projects</a>

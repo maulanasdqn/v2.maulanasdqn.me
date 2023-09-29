@@ -2,7 +2,7 @@
 import { storyblokEditable } from "@storyblok/astro";
 const { blok } = Astro.props
 ---
-<section {...storyblokEditable(blok)} class="flex flex-col gap-y-1 items-center h-screen justify-center">
+<section {...storyblokEditable(blok)} class="flex flex-col gap-y-1 items-center h-full justify-center">
   <h1 class="text-white font-bold md:text-4xl text-2xl">{blok.name}</h1>
   <h2 class="text-white font-medium md:text-2xl text-sm">{blok.about}</h2>
 </section>

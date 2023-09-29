@@ -6,5 +6,5 @@ const { blok } = Astro.props
 
 ---
 <figure class="flex justify-start w-full" {...storyblokEditable(blok)}>
-  <img loading="eager" class="md:w-[300px] md:h-[300px] w-[200px] h-[200px]" src={blok.image.filename} alt={blok.image.alt} />
+  <img loading="eager" class="md:w-[300px] md:h-[300px] w-[200px] h-[200px] rounded-lg" src={blok.image.filename} alt={blok.image.alt} />
 </figure>
