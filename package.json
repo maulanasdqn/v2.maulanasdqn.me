@@ -11,16 +11,16 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@storyblok/astro": "^3.0.0",
-    "astro": "^3.0.8"
+    "@storyblok/astro": "latest",
+    "astro": "latest"
   },
   "devDependencies": {
-    "@astrojs/language-server": "^2.3.3",
-    "@types/node": "^20.7.1",
-    "@unocss/reset": "^0.55.7",
-    "postcss": "^8.4.29",
-    "typescript": "^5.2.2",
-    "unocss": "^0.55.7",
-    "vite": "^4.4.9"
+    "@astrojs/language-server": "latest",
+    "@types/node": "latest",
+    "@unocss/reset": "latest",
+    "postcss": "latest",
+    "typescript": "latest",
+    "unocss": "latest",
+    "vite": "latest"
   }
 }

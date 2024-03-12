@@ -1,16 +1,14 @@
 ---
 import { useStoryblokApi } from "@storyblok/astro";
 import StoryblokComponent from "@storyblok/astro/StoryblokComponent.astro"
-import Wrapper from "@/modules/wrapper.astro";
 
 const storyblokApi = useStoryblokApi();
 
-const { data } = await storyblokApi.get("cdn/stories/portofolio", {
+const { data } = await storyblokApi.get("cdn/stories/hero", {
   version: import.meta.env.STORYBLOK_VERSION,
 });
 
 const story = data.story;
 ---
-<Wrapper>
-  <StoryblokComponent blok={story.content} />
-</Wrapper>
+
+<StoryblokComponent blok={story.content} />
