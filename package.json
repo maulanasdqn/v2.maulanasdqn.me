@@ -11,14 +11,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@storyblok/astro": "latest",
     "astro": "latest"
   },
   "devDependencies": {
     "@astrojs/language-server": "latest",
-    "@types/node": "latest",
     "@unocss/reset": "latest",
+    "bun-types": "^1.1.3",
     "postcss": "latest",
+    "prettier-plugin-astro": "^0.13.0",
     "typescript": "latest",
     "unocss": "latest",
     "vite": "latest"
