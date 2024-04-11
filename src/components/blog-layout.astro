@@ -1,5 +1,6 @@
 ---
 import Navbar from "@/components/navbar.astro";
+const { frontmatter } = Astro.props;
 ---
 
 <html lang="en">
@@ -10,7 +11,7 @@ import Navbar from "@/components/navbar.astro";
     <meta name="description" content="Maulana Sodiqin is a Software Engineer" />
     <meta name="description" content="Maulana Sodiqin Frontend Engineer" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <title>Maulana Sodiqin | Personal Website</title>
+    <title>Maulana Sodiqin | Blog Post</title>
   </head>
 
   <body>
@@ -18,7 +19,14 @@ import Navbar from "@/components/navbar.astro";
       class="p-4 flex flex-col gap-y-4 w-full items-center justify-start min-h-screen h-full bg-gray-900"
     >
       <Navbar />
-      <section class="max-w-[1200px] w-full mt-12 py-12">
+      <section class="max-w-[1200px] w-full mt-12 py-12 flex flex-col gap-y-3">
+        <div class="flex flex-col">
+          <h1 class="text-6xl text-white font-bold">{frontmatter.title}</h1>
+          <h2 class="text-1xl text-white font-medium">
+            Author: {frontmatter.author}
+          </h2>
+        </div>
+        <h3 class="text-white text-xs">5 Min Read</h3>
         <slot />
       </section>
     </main>

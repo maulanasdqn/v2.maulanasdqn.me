@@ -16,9 +16,9 @@
   "devDependencies": {
     "@astrojs/language-server": "latest",
     "@unocss/reset": "latest",
-    "bun-types": "^1.1.3",
+    "bun-types": "latest",
     "postcss": "latest",
-    "prettier-plugin-astro": "^0.13.0",
+    "prettier-plugin-astro": "latest",
     "typescript": "latest",
     "unocss": "latest",
     "vite": "latest"

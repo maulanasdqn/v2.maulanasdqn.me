@@ -2,10 +2,21 @@
 const currentPath = Astro.url.pathname;
 ---
 
-<header class="sticky top-0 p-4 w-full h-auto bg-gradient-to-r from-gray-900 via-[#18181b] to-gray-900 z-10">
- <nav class="flex text-white justify-start gap-4 items-center">
-  <a class={currentPath === "#home" ? "text-yellow-600" : ""} href="#home">Home</a>
-  <a class={currentPath === "#about" ? "text-yellow-600" : ""} href="#about">About</a>
-  <a class={currentPath === "#projects" ? "text-yellow-600" : ""} href="#projects">Projects</a>
- </nav>
+<header
+  class="fixed top-6 p-4 w-fit h-auto bg-black z-10 rounded-full bg-opacity-80"
+>
+  <nav class="flex text-white justify-center gap-4 items-center">
+    <a
+      class={currentPath === "/"
+        ? "text-yellow-600"
+        : "hover:text-yellow-600 font-medium"}
+      href="/">Home</a
+    >
+    <a
+      class={currentPath.includes("blogs")
+        ? "text-yellow-600"
+        : "hover:text-yellow-600 font-medium"}
+      href="/blogs">Blogs</a
+    >
+  </nav>
 </header>
