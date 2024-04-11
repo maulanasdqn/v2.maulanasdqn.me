@@ -3,19 +3,19 @@ const currentPath = Astro.url.pathname;
 ---
 
 <header
-  class="fixed top-6 p-4 w-fit h-auto bg-black z-10 rounded-full bg-opacity-80"
+  class="fixed top-6 p-4 w-fit h-auto bg-[#2a283e] z-10 rounded-full bg-opacity-80"
 >
   <nav class="flex text-white justify-center gap-4 items-center">
     <a
       class={currentPath === "/"
-        ? "text-yellow-600"
-        : "hover:text-yellow-600 font-medium"}
+        ? "text-[#3e8fb0]"
+        : "hover:text-[#3e8fb0] font-medium"}
       href="/">Home</a
     >
     <a
       class={currentPath.includes("blogs")
-        ? "text-yellow-600"
-        : "hover:text-yellow-600 font-medium"}
+        ? "text-[#3e8fb0]"
+        : "hover:text-[#3e8fb0] font-medium"}
       href="/blogs">Blogs</a
     >
   </nav>
